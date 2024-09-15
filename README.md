@@ -21,7 +21,6 @@ The Blog API is built with Node.js and provides the following functionalities:
 ### Running the Application
 
 1. **Install Dependencies:**
-   ```bash
    npm install
 2. start the server
     npm start
