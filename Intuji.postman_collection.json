@@ -28,8 +28,28 @@
 		{
 			"name": "Post Blog",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Intuiji 2\",\r\n    \"description\": \"this is Test 2\",\r\n    \"category\": \"Computer Science\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/add/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"add",
+						""
+					]
+				}
 			},
 			"response": []
 		},
@@ -37,15 +57,46 @@
 			"name": "Get Blog by ID",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/blog/66e67350130c7aa872394115",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blog",
+						"66e67350130c7aa872394115"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Update Blog",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"66e67350130c7aa872394115\",\r\n    \"title\": \"This is update test\",\r\n    \"description\": \"this is Test\",\r\n    \"category\": \"ITTTT\",\r\n    \"__v\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/blog/66e67350130c7aa872394115",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blog",
+						"66e67350130c7aa872394115"
+					]
+				}
 			},
 			"response": []
 		}
