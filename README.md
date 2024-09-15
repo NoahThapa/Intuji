@@ -23,7 +23,9 @@ The Blog API is built with Node.js and provides the following functionalities:
 1. **Install Dependencies:**
    npm install
 2. start the server
+   
     npm start
+
 This command will connect to the database and start the server. The application will be available on the configured port.
 
 Postman Collection
